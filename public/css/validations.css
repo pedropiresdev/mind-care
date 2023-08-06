@@ -1,0 +1,12 @@
+#nameError, #emailError {
+    display: none;
+    font-size: 0.8em;
+}
+
+#nameError.visible, #emailError.visible {
+    display: block;
+}
+
+input.invalid {
+    border-color: red;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>MindCare - Cuidando da sua Mente</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/message.js"></script>
+</head>
+<body>
+<!-- Cabeçalho da página -->
+<header>
+    <div class="header-container">
+        <h1 class="logo">MindCare</h1>
+        <!-- NAV = Links de navegação -->
+        <nav>
+            <!-- Lista não ordenada = UL; LI = elementos da lista -->
+            <ul>
+                <li><a href="#homepage">Bem Vindo!</a></li> <!-- Botão Link para a seção de Bem Vindo/Homepage -->
+                <li><a href="#psicologos">Psicólogos</a></li> <!-- Botão Link para a seção dos Psicólogs -->
+                <li><a href="#about">Sobre Nós</a></li> <!-- Botão Link para a seção "Sobre Nós" -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Separador (Faixa entre o cabeçalho e o corpo) -->
+<div class="separator"></div>
+
+<!-- Seção da Homepage/Bem Vindo! -->
+<section id="homepage" class="section">
+    <h2>Bem-vindo ao MindCare</h2>
+    <p>Nós estamos aqui para apoiá-lo em sua jornada de saúde mental.</p>
+    <p>Nossa missão é promover o bem-estar mental positivo e fornecer recursos valiosos para indivíduos que buscam ajuda.</p>
+</section>
+
+<!-- Seção dos Psicólogos -->
+<section id="psicologos" class="section">
+    <h2>Conheça Nossos Psicólogos Especialistas</h2>
+    <div class="psicologo-card">
+        <img src="./images/psicologo1.jpeg" alt="Psicóloga atendendo paciente fazendo expressão facial empática."> <!-- Define a imagem do médico 1 -->
+        <h3>Dra. Elizabeth Menezes</h3>
+        <p>Especialização: Ansiedade e Depressão</p>
+    </div>
+    <div class="psicologo-card">
+        <img src="./images/psicologo2.jpeg" alt="Psicóloga atendendo paciente deitada no divã enquanto a profissional
+            realiza anotações.">
+        <h3>Dra. Maria Santos</h3>
+        <p>Especialização: Transtorno de Estresse Pós-Traumático (TEPT)</p>
+    </div>
+</section>
+
+<!-- Ambientes aconchegantes -->
+<section id="ambientes" class="section">
+    <h2>Ambientes aconchegantes e climatizados</h2>
+    <div class="ambientes-card">
+        <img src="./images/consultorio1.webp" alt=""> <!-- Define a imagem do médico 1 -->
+        <h3>Sala 1</h3>
+    </div>
+    <div class="ambientes-card">
+        <img src="./images/consultorio2.jpeg" alt="">
+        <h3>Sala 2</h3>
+    </div>
+    <div class="ambientes-card">
+        <img src="./images/consultorio3.jpeg" alt="">
+        <h3>Sala 3</h3>
+    </div>
+</section>
+
+<!-- Seção "Sobre Nós" -->
+<section id="about" class="section">
+    <h2>Sobre o MindCare</h2>
+    <p>O MindCare é uma plataforma dedicada que tem como objetivo fornecer orientação, apoio e recursos para pessoas que lutam contra problemas de saúde mental.</p>
+    <p>Se você tiver alguma pergunta ou feedback, sinta-se à vontade para entrar em contato conosco usando o formulário abaixo.</p>
+
+    <form>
+        {{> form }}
+    </form>
+</section>
+</body>

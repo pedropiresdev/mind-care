@@ -1,0 +1,14 @@
+<!-- Formulário de Contato -->
+<form id="contact-form" action="/add" method="POST">
+    <!-- O uso de required faz com que seja requerido o preenchimento dos campos para envio, só que também é tratado no js. -->
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required maxlength="60">
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required maxlength="60">
+
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" rows="4" required maxlength="300"></textarea>
+
+    <button type="submit">Enviar Mensagem</button> <!-- Botão de envio -->
+</form>

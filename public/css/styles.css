@@ -1,0 +1,150 @@
+/* Estilos que afetam todo o documento */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o corpo do documento */
+    margin: 0; /* Remove as margens externas do corpo do documento */
+    padding: 0; /* Remove o padding interno do corpo do documento */
+}
+
+.section {
+    padding: 40px; /* Adiciona espaçamento interno para todas as seções */
+}
+
+/* Define o estilo principal apenas do Header */
+header {
+    background-color: #F2F2F2;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Adiciona espaçamento inferior ao título "MindCare" */
+header h1 {
+    margin-bottom: 20px;
+}
+
+/* Os botões de navegação desalinham sem colocar margem e padding como 0 */
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline; /* Exibe os itens da lista em linha ao invés de coluna */
+    margin-right: 10px; /* Adiciona mais espaço entre os itens */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Remove o sublinhado do texto */
+    color: #333;
+	border: 1px solid; /* Adiciona uma borda/caixa ao redor do texto */
+	border-radius: 5px; /* Deixa as bordas arredondadas */
+    padding: 5px 10px; /* Aumenta o espaçamento em volta do texto para aumentar a caixa */
+}
+
+/* hover indica quando o mouse está passando por cima do item */
+header nav ul li a:hover {
+    background-color: #333; /* Define a cor da caixa ao passar o mouse */
+    color: #FFF; /* Define a cor do texto ao passar o mouse */
+}
+
+
+/* Estilo da homepage(a página de Bem Vindo!) */
+#homepage {
+    background-color: #F8E7D2;
+    text-align: center;
+}
+
+/* Estilo da seção de médicos */
+#psicologos {
+    background-color: #FFD3B6;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Estilo da seção de médicos */
+#ambientes {
+    background-color: #282c34;
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.psicologo-card, .ambientes-card {
+    display: inline-block; /* Exibe os médicos em linha, sem isso ficaria em colunas */
+	vertical-align: middle; /* Tentativa de alinhar os cartões, ficou quase perfeito */
+	height: 300px; /* Sem isso, os cartões tem qualquer altura e ficam desalinhados */
+    width: 300px; /* Limita a largura dos cartões dos médicos, sem isso eles ficariam de qualquer tamanho */
+    margin: 20px;
+    text-align: center;
+}
+
+/* Define o tamanho e formato das imagens, lembre-se que está associada ao cartão acima, então devem ser sempre menores que os limites do cartão */
+.psicologo-card img, .ambientes-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Faz com que a imagem seja cortada ao invés de ser distorcida */
+    border-radius: 50%; /* Borda arredondada para as imagens */
+    margin-bottom: 10px;
+}
+
+/* Estilo da seção "Sobre Nós" */
+#about {
+    background-color: #D1F2EB;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Estilo do Formulário de contato */
+form {
+    display: flex; /* Define o layout flexível */
+    flex-direction: column; /* Disposição dos elementos em coluna(vertical) */
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto; /* Centraliza o formulário na página */
+}
+
+label {
+    margin-top: 5px; /* Aumenta o espaçamento entre as colunas do formulário */
+}
+
+/* Tratamento do estilo das áreas de texto(input) */
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px; /* Arredonda as bordas da caixa dos campos do formulário */
+    border: 1px solid; /* Faz uma borda visível na caixa */
+}
+
+/* Botão de envio */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none; /* Deixa o botão sem borda */
+    border-radius: 5px; /* Arredonda a caixa do botão */
+    cursor: pointer; /* Muda o cursos para uma mão quando passa em cima do botão */
+}
+
+button:hover {
+    background-color: #45a049; /* Muda a cor do botão quando passar o mouse em cima */
+}
+
+/* Barra de separação do header e corpo */
+.separator {
+    height: 10px;
+    background-color: #333;
+}
+
+input, textarea, #welcomeMessage {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
