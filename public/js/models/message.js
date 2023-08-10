@@ -9,13 +9,16 @@ export default sequelize.define('message', {
         primaryKey: true
     },
     nome: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        require: true
     },
     email: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        require: true
     },
     form_message: {
-        type: DataTypes.TEXT
+        type: DataTypes.TEXT,
+        require: true
     }
 })
 

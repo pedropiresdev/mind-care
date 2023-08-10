@@ -7,7 +7,7 @@ async function findAll(req, res) {
 
 async function addClient(req, res) {
     Message.create({
-        nome: req.body.nome,
+        nome: req.body.name,
         email: req.body.email,
         form_message: req.body.message,
     }).then((result) => res.json(result));
